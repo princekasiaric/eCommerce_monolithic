@@ -1,0 +1,45 @@
+﻿{
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:19625",
+      "sslPort": 44372
+    }
+  },
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "Construmart.Api": {
+      "commandName": "Project",
+      "dotnetRunMessages": "true",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "https://localhost:5001;http://localhost:5000",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "CONSTRUMART_DB": "Server=localhost;Database=construmart;User Id=sa;Password=P@ssw0rd;MultipleActiveResultSets=true;",
+        "JWT_SECRET": "4b361e1fb00e41f293222286ca5c220344b5eae92cb2435194d9a766531d89299f63eb1a3b614aaa8485d3c9e59fe1ada81e47f76baf45058459828e83aabf08b78ea9c52aef4065a6300d8fc9b8959137a08a777cde46378a9f82c022fc3415",
+        "JWT_VALID_ISSUER": "https://localhost:5001",
+        "JWT_VALID_AUDIENCE": "https://localhost:5001",
+        "EMAIL_FROM_ADDRESS": "gabriel.okolie@cousant.com",
+        "EMAIL_FROM_NAME": "Construct.NG",
+        "EMAIL_HOST": "smtp.elasticemail.com",
+        "EMAIL_PORT": "2525",
+        "EMAIL_USERNAME": "gabriel.okolie@cousant.com",
+        "EMAIL_PASSWORD": "80F779F3937D145CC61BD12A65010790D7AA",
+        "CLOUDINARY_CLOUD": "solstren",
+        "CLOUDINARY_APIKEY": "134376762398582",
+        "CLOUDINARY_SECRET": "D6ma-dBemePWmhKfeHwl967adQA",
+        "PAYSTACK_SECRET": "sk_test_dbb5c22cfc4dc285ce62c46e157875b4ed63fa22"
+      }
+    }
+  }
+}

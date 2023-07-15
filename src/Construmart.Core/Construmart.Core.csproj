@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Ardalis.GuardClauses" Version="3.2.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="FluentValidation.AspNetCore" Version="10.3.1" />
+    <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="UseCases\DiscountUseCases\" />
+    <Folder Include="UseCases\ProductUseCases\" />
+    <Folder Include="UseCases\CartUseCases\" />
+    <Folder Include="UseCases\DeliveryAddressUseCases\" />
+    <Folder Include="UseCases\NigerianStateUseCase\" />
+    <Folder Include="UseCases\OrderUseCases\" />
+    <Folder Include="ProcessorContracts\Paystack\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="UseCases\DeliveryAddressUseCases\" />
+    <None Remove="UseCases\NigeriaStateUseCase\" />
+    <None Remove="UseCases\OrderUseCases\" />
+    <None Remove="ProcessorContracts\Paystack\" />
+  </ItemGroup>
+</Project>
